@@ -8,14 +8,14 @@ class Sum{
     }
         count(){
             if(x < 1 || n < 1){
-                console.log("Вы ввели не натуральное число")
+                console.log(`Вы ввели не натуральное число`)
               }else{
-              console.log("x в степени n = " + Math.pow(x, n))
+              console.log(`x в степени n =  ${Math.pow(this.x, this.n)}`)
               }
         }
 }
 
 
-const sum = new Sum
+const sum = new Sum(x, n)
 
 sum.count()
